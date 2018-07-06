@@ -34,7 +34,7 @@ Note: Expected to work on all CPUs that implement the assembly instruction
 function cpuid end
 
 # Convenience function allowing passing other than UInt32 values
-cpuid( leaf   ::Integer=zero(UInt32)
+cpuid( leaf::Integer=zero(UInt32)
              , subleaf::Integer=zero(UInt32)) = cpuid(UInt32(leaf), UInt32(subleaf))
 
 #
